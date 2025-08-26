@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Web Curriculum</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .section {
+      background-color: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      cursor: pointer;
+    }
+    .section h2 {
+      margin: 0;
+      color: #34495e;
+    }
+    .topics {
+      display: none;
+      margin-top: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    li::before {
+      content: "✅ ";
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Web Development Curriculum</h1>
+
+  <div class="section" onclick="toggleTopics('html')">
+    <h2>HTML Topics</h2>
+    <div class="topics" id="html">
+      <ul>
+<li>Introduction to HTML</li>
+        <li>HTML Tags & Elements</li>
+        <li>Text Formatting Tags</li>
+        <li>Images, Links, and Lists</li>
+        <li>Tables and Forms</li>
+        <li>HTML5 Semantic Tags</li>
+        <li>Media (Video & Audio)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section" onclick="toggleTopics('css')">
+    <h2>CSS Topics</h2>
+    <div class="topics" id="css">
+      <ul>
+        <li>What is CSS & How to Use It</li>
+        <li>Selectors, Properties, and Values</li>
+        <li>Colors, Units & Text Styling</li>
+        <li>Box Model, Margin, Padding, Borders</li>
+        <li>Layouts: Flexbox & Grid</li>
+        <li>Responsive Design (Media Queries)</li>
+        <li>Positioning: Static, Relative, Absolute, Fixed</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section" onclick="toggleTopics('extras')">
+    <h2>Extras</h2>
+    <div class="topics" id="extras">
+      <ul>
+        <li>CSS Units (px, %, em, rem, vw, vh)</li>
+        <li>Relative vs Absolute Paths</li>
+        <li>Building a Simple Web Page</li>
+        <li>Deploying Your Site</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section" onclick="toggleTopics('js')">
+    <h2>JavaScript Topics</h2>
+    <div class="topics" id="js">
+      <ul>
+        <li>What is JavaScript & Why It's Used</li>
+        <li>Variables, Data Types & Operators</li>
+        <li>Functions and Scope</li>
+        <li>Events and DOM Manipulation</li>
+        <li>Loops & Conditionals</li>
+        <li>Arrays & Objects</li>
+        <li>Intro to Fetch API & JSON</li>
+        <li>Basic Form Validation</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleTopics(id) {
+      const topics = document.getElementById(id);
+      topics.style.display = topics.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
