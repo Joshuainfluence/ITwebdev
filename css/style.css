@@ -1,7 +1,10 @@
-p{
-    text-align: center;
-    font-size: 2rem;
-    color: red;
-    font-weight: 700;
-    font-family: sans-serif;
+
+/* External CSS file */
+
+/* This rule applies to all <p> elements */
+p {
+  text-align: center;         /* Align text to center */
+  font-size: 2rem;            /* Font size of 2rem */
+  font-family: sans-serif;    /* Use sans-serif font */
+  font-weight: 700;           /* Bold text */
 }
