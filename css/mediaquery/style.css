@@ -1,0 +1,52 @@
+body{
+    background: red;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    background: black;
+    display: flex;
+}
+
+.col{
+    width: 25%;
+    height: 300px;
+    border: 1px solid green;
+}
+
+.col:nth-child(2){
+    border: 1px solid red;
+}
+
+/* for mobile view */
+@media (max-width: 600px){
+    /* css code */
+    body{
+        background: blue;
+    }
+
+    .container{
+        display: block;
+    }
+    .col{
+        width: 100%;
+    }
+}
+
+/* for tablet */
+
+@media (min-width:600px) and (max-width:900px){
+    body{
+        background: yellow;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col{
+        width: 49%;
+    }
+}
