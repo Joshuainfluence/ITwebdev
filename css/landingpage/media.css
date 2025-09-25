@@ -1,0 +1,32 @@
+@media (max-width:900px) {
+    ul {
+        display: none;
+    }
+
+    section#home .col:nth-child(1) {
+        width: 100%;
+    }
+
+    section#home .col:nth-child(2) {
+        display: none;
+    }
+
+    section#about .col:nth-child(1) {
+        width: 100%;
+    }
+
+    section#about .col:nth-child(2) {
+        display: none;
+    }
+
+    section#news .row{
+        display: block;
+    } 
+
+    section#news .row .col {
+    width: 100%;
+    
+}
+
+
+}
